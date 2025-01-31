@@ -5,9 +5,16 @@ header h1{
 }
 header{
     background-image: url(/img/wall.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0 !important;
+    padding: 0;
 }
 main{
+    margin-top: 0 !important;
     background-image: url(/img/cork.png);
+    background-size: cover;
+    background-position: center;
 }
 .card-container{
     display: flex;
@@ -33,4 +40,31 @@ main{
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.card-title{
+    font-family: "Edu TAS Beginner", serif;
+}
+.card-date{
+    font-family: "Sometype Mono", monospace;
+}
+#overlay {
+    position: fixed;
+    display: none; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center; 
+    align-items: center; 
+    display: flex; 
+    z-index: 1;
+}
+
+#img-overlay {
+    max-width: 90%; 
+    max-height: 90%; 
+    object-fit: contain;
 }
